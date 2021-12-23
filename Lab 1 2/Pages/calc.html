@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="css\style2.css">
+    <meta http-equiv="Content-Type" />
+  </head>
+  <body>
+    <header>
+	<div class = "headerObject">
+		<h1>Main page</h1>
+	</div>
+    </header>
+
+<aside>
+   <a href="Pages\contacts.html"><h3>Контакты</h3></a>
+   <a href="Pages\info.html"><h3>Информация</h3></a>
+</aside>
+
+<div class="blockRow">
+	<div class="blockColumn">
+		<div class="blockItem">
+			<div class="Zagolovok">
+				<h1>Решение квадратного уравнения вида ax&sup2; + bx + c = 0.</h1>
+			</div>
+				  <form class="forma" name="square" action="javascript:square_equation()">
+            a <input name="square_a" required="" type="text" size="4">
+            b <input name="square_b" required="" type="text" size="4">
+            c <input name="square_c" required="" type="text" size="4">
+            <input type="submit" value="Решить">
+          </form>
+          Решение: <span id="square_sol">Введите коэффициенты и нажмите "посчитать"</span>
+          <script language="javascript">
+          function square_equation() {
+            var a = document.square.square_a.value;
+            var b = document.square.square_b.value;
+            var c = document.square.square_c.value;
+            var sol = document.getElementById("square_sol");
+            if (a != 0){
+              var d = b * b - 4 * a * c;
+              if ( d < 0 ) {
+                string = "пара комплексно-сопряженных корней<br>x<sub>1</sub> = (";
+                string += - b / ( 2 * a );
+                string += ", ";
+                string += Math.sqrt( -d ) / ( 2 * a );
+                string += "), x<sub>2</sub> = (";
+                string += - b / ( 2 * a);
+                string += ", ";
+                string += - Math.sqrt( -d ) / ( 2 * a );
+                string += ").";
+              } else {
+                  if ( d == 0 ) {
+                    string = "два одинаковых вещественных корня:<br>x<sub>1</sub> = x<sub>2</sub> = ";
+                    string += -b / ( 2 * a );
+                    string += ".";
+                  } else {
+                    string = "два различных вещественных корня:<br>x<sub>1</sub> = ";
+                    string += -b / ( 2 * a ) - Math.sqrt( d ) / ( 2 * a );
+                    string += ", x<sub>2</sub> = ";
+                    string += -b / ( 2 * a ) + Math.sqrt( d ) / ( 2 * a );
+                    string += ".";
+                  }
+              }
+            }
+            else{
+              string = 'а не должно равнятся нулю';
+            }
+            sol.innerHTML = string;
+          }
+          -->
+        </script>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<div class="footerObject">
+		<h1>Работа выполнена студентом ВИС32 Рыбальченко Сергеем</h1>
+	</div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+nav {
+  box-shadow: 0 0 10px rgba(24, 19, 19, 0.5);
+}
+ 
+.content {
+  min-width: 100%;
+  min-height: 800px;
+  margin-top: 20px;
+}
+.sidebar {
+  min-width: 100%;
+  min-height: 800px;
+  margin-top: 20px;
+}
+.else {
+  min-width: 100%;
+  min-height: 800px;
+  margin-top: 20px;
+}
+.grey {
+  color: #0c0c0c;
+}
+hr {
+  color: #0c0c0c;
+}
+.covid {
+  min-width: 100%;
+  min-height: 50px;
+  border: 1px solid #bdbdbe;
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.news {
+  min-width: 100%;
+  min-height: 300px;
+  border: 1px solid #bdbdbe;
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.pogoda {
+  min-width: 95%;
+  min-height: 300px;
+  border: 1px solid #bdbdbe;
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+strong {
+  margin-left: 10px;
+  color: #3c3c3d;
+  font-size: 20px;
+}
+text {
+  color: #bdbdbe;
+}
+.niz {
+  min-height: 200px;
+}

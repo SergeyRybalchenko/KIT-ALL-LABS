@@ -1,0 +1,43 @@
+.blockRow{
+	display: flex;
+	justify-content: center;
+}
+
+.headerObject{
+	background-color: #FF8C00;
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-radius: 15px;
+	font: 12pt Verdana, sans-serif;
+}
+
+.blockItem{
+	background-color: #FF8C00;
+	border-radius: 15px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.footerObject{
+	background-color: #000000;
+	color: white;
+	font: 5pt Verdana, sans-serif;
+	border-radius: 10px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+aside {
+	background: #f0f0f0;
+	padding: 10px;
+	margin: 10px;9:55 24.09.2021
+	width: 200px;
+	float: right;
+	height: 143px;
+	border-radius: 10px;
+   }
+
+.Zagolovok{
+	text-align: center;
+}
